@@ -1,9 +1,23 @@
+/* 
+TODO:
+- for multiples of 3, print "Devhaus" instead of the number - P
+- for multiples of 5 print "Learning" 
+- for multiples of 7 print "Model"
+- for multiples of both 3 and 5, print Devhaus Learning
+- for multiples of both 3 and 7, print Devhaus Model 
+- for multiples of both 5 and 7, print Learning Model
+- for multiples of all 3, 5 and 7, print iBlüm(note the umlaut) 
+*/
+
 const devhaus105String = () => {
   let output = "";
 
   //generate a string of #'s 1 - 105:
   for (var i = 1; i <= 105; i++) {
-    if (i % 3 == 0) {
+    if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+      output = output.concat(`iBlüm,`);
+    } else if (i % 3 == 0) {
+      //'Devhaus' for multiples of 3:
       output = output.concat(`Devhaus,`);
     } else {
       output = output.concat(`${i},`);
