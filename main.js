@@ -14,10 +14,12 @@ const devhaus105String = () => {
 
   //generate a string of #'s 1 - 105:
   for (var i = 1; i <= 105; i++) {
+    //swap key numbers with words:
     if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
       output = output.concat(`iBlüm,`);
+    } else if (i % 5 == 0 && i % 7 == 0) {
+      output = output.concat(`Learning Model,`);
     } else if (i % 3 == 0) {
-      //'Devhaus' for multiples of 3:
       output = output.concat(`Devhaus,`);
     } else {
       output = output.concat(`${i},`);
