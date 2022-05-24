@@ -1,14 +1,4 @@
-/* 
-TODO:
-- for multiples of 3, print "Devhaus" instead of the number - P
-- for multiples of 5 print "Learning" 
-- for multiples of 7 print "Model"
-- for multiples of both 3 and 5, print Devhaus Learning - P
-- for multiples of both 3 and 7, print Devhaus Model - P
-- for multiples of both 5 and 7, print Learning Model - P
-- for multiples of all 3, 5 and 7, print iBlüm(note the umlaut) - P
-*/
-
+//string-generating function:
 const devhaus105String = () => {
   let output = "";
 
@@ -39,4 +29,9 @@ const devhaus105String = () => {
   return output;
 };
 
-console.log(devhaus105String());
+//main calling function
+const main = () => {
+  console.log(devhaus105String());
+};
+
+main();
