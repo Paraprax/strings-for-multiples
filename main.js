@@ -4,9 +4,9 @@ TODO:
 - for multiples of 5 print "Learning" 
 - for multiples of 7 print "Model"
 - for multiples of both 3 and 5, print Devhaus Learning
-- for multiples of both 3 and 7, print Devhaus Model 
-- for multiples of both 5 and 7, print Learning Model
-- for multiples of all 3, 5 and 7, print iBlüm(note the umlaut) 
+- for multiples of both 3 and 7, print Devhaus Model - P
+- for multiples of both 5 and 7, print Learning Model - P
+- for multiples of all 3, 5 and 7, print iBlüm(note the umlaut) - P
 */
 
 const devhaus105String = () => {
@@ -19,6 +19,8 @@ const devhaus105String = () => {
       output = output.concat(`iBlüm,`);
     } else if (i % 5 == 0 && i % 7 == 0) {
       output = output.concat(`Learning Model,`);
+    } else if (i % 3 == 0 && i % 7 == 0) {
+      output = output.concat(`Devhaus Model,`);
     } else if (i % 3 == 0) {
       output = output.concat(`Devhaus,`);
     } else {
