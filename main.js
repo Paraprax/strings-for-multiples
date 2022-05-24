@@ -1,0 +1,1 @@
+const devhaus105String = () => {};
