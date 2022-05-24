@@ -21,6 +21,8 @@ const devhaus105String = () => {
       output = output.concat(`Learning Model,`);
     } else if (i % 3 == 0 && i % 7 == 0) {
       output = output.concat(`Devhaus Model,`);
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      output = output.concat(`Devhaus Learning,`);
     } else if (i % 7 == 0) {
       output = output.concat(`Model,`);
     } else if (i % 5 == 0) {
